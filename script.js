@@ -3,11 +3,13 @@ function calculate(){
     let height=document.getElementById("height").value;
     if(!(weight) || weight=="0" || weight<=0 ){
             document.getElementById("bmiresult").innerHTML="Enter valid weight";
+            document.getElementById("condition").innerHTML="";
             document.getElementById("weight").focus();
             return;
     }
     if(!(height) || height=="0" || height<=0){
             document.getElementById("bmiresult").innerHTML="Enter valid height";
+            document.getElementById("condition").innerHTML="";
             document.getElementById("height").focus();
             return;
     }
@@ -26,4 +28,5 @@ function calculate(){
     else {
         document.getElementById("condition").innerHTML="You are Obese";
     }
+
 }
